@@ -1,0 +1,60 @@
+:root {
+  --color-main-header: rgb(20,24,28);
+  --color-main-footer: rgb(44,52,64);
+  --color-hr: rgb(68,85,102);
+  --color-card-footer: rgb(68,85,102);
+  --color-card-border: rgb(121,138,155);
+  --color-text-lightest: rgb(255, 255, 255);
+  --color-text-lighter: rgb(201, 219, 235);
+  --color-text-light: rgb(170,187,204);
+  --color-text-plain: rgb(153,170,187);
+  --color-text-dark: rgb(102, 119, 136);
+  --color-text-darker: rgb(64,77,89);
+  --color-text-darkest: rgb(52, 62, 71);
+  --color-title: rgb(255, 255, 255);
+  --color-text-background: rgb(32,40,48);
+  --color-logo-blue: #40bcf4;
+  --color-logo-green: rgb(0,224,84);
+  --color-button-text: rgb(255, 255, 255);
+  --color-button-green-light: #15bb32;
+  --color-button-green: rgb(0,176,32);
+  --color-button-green-dark: rgb(1, 161, 30);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: var(--color-text-plain)
+}
+
+html, body, #root {
+  width: 100%;
+}
+
+#root {
+  background: #14181c url(../images/bg.png) 0 -1px repeat-x;
+  letter-spacing: 1px;;
+  width: 100%;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  height: 100%;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: default; /* Add a pointer on hover */
+}
